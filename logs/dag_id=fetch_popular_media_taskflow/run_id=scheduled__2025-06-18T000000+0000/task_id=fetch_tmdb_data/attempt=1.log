@@ -1,0 +1,13 @@
+{"timestamp":"2025-06-18T16:21:01.490163","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-18T16:21:01.492527","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/fetch_movie_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-18T16:21:03.219996Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-18T16:21:03.221230Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-18T16:21:03.221851Z","level":"info","event":"Current task name:fetch_tmdb_data","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-18T16:21:03.222378Z","level":"info","event":"Dag name:fetch_popular_media_taskflow","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-18T16:21:03.004935","level":"info","event":"Fetching popular movies from TMDB API","logger":"root"}
+{"timestamp":"2025-06-18T16:21:03.512793","level":"info","event":"Saved movie data to /opt/airflow/data/movie_popular_20250618.json","logger":"root"}
+{"timestamp":"2025-06-18T16:21:03.514310","level":"info","event":"Done. Returned value was: /opt/airflow/data/movie_popular_20250618.json","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-06-18T16:21:03.514851","level":"info","event":"Pushing xcom","ti":"RuntimeTaskInstance(id=UUID('019783d7-c35b-76ce-b18e-57f9de23eea1'), task_id='fetch_tmdb_data', dag_id='fetch_popular_media_taskflow', run_id='scheduled__2025-06-18T00:00:00+00:00', try_number=1, map_index=-1, hostname='f622579314b6', context_carrier={}, task=<Task(_PythonDecoratedOperator): fetch_tmdb_data>, bundle_instance=LocalDagBundle(name=dags-folder), max_tries=1, start_date=datetime.datetime(2025, 6, 18, 16, 20, 51, 907531, tzinfo=TzInfo(UTC)), end_date=None, state=<TaskInstanceState.RUNNING: 'running'>, is_mapped=False, rendered_map_index=None)","logger":"task"}
+{"timestamp":"2025-06-18T16:21:03.878873Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-18T16:21:03.881621Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-18T16:21:03.883045Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): fetch_tmdb_data>","chan":"stdout","logger":"task"}

@@ -1,0 +1,10 @@
+{"timestamp":"2025-06-09T11:26:22.489663","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-09T11:26:22.492291","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/fetch_movie_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-09T11:26:22.659099Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-09T11:26:22.660427Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-09T11:26:22.662007Z","level":"info","event":"Current task name:fetch_movie_data","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-09T11:26:22.662995Z","level":"info","event":"Dag name:fetch_popular_movies","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-09T11:26:22.777349","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.operators.python.PythonOperator"}
+{"timestamp":"2025-06-09T11:26:22.853155Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-09T11:26:22.853919Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-09T11:26:22.854499Z","level":"info","event":"Task operator:<Task(PythonOperator): fetch_movie_data>","chan":"stdout","logger":"task"}

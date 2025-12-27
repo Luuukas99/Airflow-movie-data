@@ -1,0 +1,15 @@
+{"timestamp":"2025-06-16T16:29:12.498272","level":"info","event":"DAG bundles loaded: dags-folder, example_dags","logger":"airflow.dag_processing.bundles.manager.DagBundlesManager"}
+{"timestamp":"2025-06-16T16:29:12.499999","level":"info","event":"Filling up the DagBag from /opt/airflow/dags/fetch_movie_data.py","logger":"airflow.models.dagbag.DagBag"}
+{"timestamp":"2025-06-16T16:29:13.376207Z","level":"info","event":"Task instance is in running state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-16T16:29:13.380294Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.QUEUED","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-16T16:29:13.381921Z","level":"info","event":"Current task name:upload_to_s3__1","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-16T16:29:13.384101Z","level":"info","event":"Dag name:fetch_popular_media_taskflow","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-16T16:29:13.083893","level":"info","event":"Uploading /opt/airflow/data/tv_popular_20250616.json to S3 bucket","logger":"root"}
+{"timestamp":"2025-06-16T16:29:13.115909","level":"info","event":"Secrets backends loaded for worker","count":1,"backend_classes":["EnvironmentVariablesBackend"],"logger":"supervisor"}
+{"timestamp":"2025-06-16T16:29:13.384949","level":"info","event":"Connection Retrieved 'aws_default'","logger":"airflow.hooks.base"}
+{"timestamp":"2025-06-16T16:29:13.385545","level":"info","event":"AWS Connection (conn_id='aws_default', conn_type='aws') credentials retrieved from login and password.","logger":"airflow.providers.amazon.aws.utils.connection_wrapper.AwsConnectionWrapper"}
+{"timestamp":"2025-06-16T16:29:32.388642","level":"info","event":"Uploaded /opt/airflow/data/tv_popular_20250616.json to s3://my-move-data-bucket/tmdb/tv/tv_popular_20250616.json","logger":"root"}
+{"timestamp":"2025-06-16T16:29:32.390126","level":"info","event":"Done. Returned value was: None","logger":"airflow.task.operators.airflow.providers.standard.decorators.python._PythonDecoratedOperator"}
+{"timestamp":"2025-06-16T16:29:32.451635Z","level":"info","event":"Task instance in success state","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-16T16:29:32.452298Z","level":"info","event":" Previous state of the Task instance: TaskInstanceState.RUNNING","chan":"stdout","logger":"task"}
+{"timestamp":"2025-06-16T16:29:32.452968Z","level":"info","event":"Task operator:<Task(_PythonDecoratedOperator): upload_to_s3__1>","chan":"stdout","logger":"task"}
