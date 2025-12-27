@@ -96,3 +96,7 @@ with DAG(
     tv_file = fetch_tmdb_data('tv')
     load_tmdb_data('tv', tv_file)
     upload_to_s3('tv', tv_file)
+
+
+    ### Pridedu komentara
+    #####
